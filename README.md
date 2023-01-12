@@ -14,4 +14,4 @@ The bytecode you'd like to disassemble should be placed in `bytecode/bytecode.tx
 
 The resulting disassemblies are placed in `output`. Functions are found in `functions.json`, a linear sweep in `scan.json`, and the main function in `main.json`.
 
-Lastly, all opcode ranges not found by recursive traversal can be seen in `unscanned.json`, and branches can be found in `branches.json`, where the `branch.name` field corresponds to the branch pointer.
+Lastly, branches can be found in `branches.json`.
