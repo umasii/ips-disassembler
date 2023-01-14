@@ -8,7 +8,7 @@ module.exports = {
             let val1 = disassembler.getValue();
             let val2 = disassembler.getValue();
             let reg1 = disassembler.getRegister();
-            disassembler.state.trace.push('ADD' + offset + val1 + + val2 + '->' + ' reg' + reg1);
+            disassembler.state.trace.push('ADD' + offset + val1 + ' + ' + val2 + '->' + ' reg' + reg1);
         },
     },
     0x01: {
@@ -283,7 +283,7 @@ module.exports = {
             let val1 = disassembler.getValue();
             let val2 = disassembler.getValue();
             let reg1 = disassembler.getRegister();
-            disassembler.state.trace.push("BIND APPLY" + offset + val1 + " " + val2 + " -> " + reg1);
+            disassembler.state.trace.push("BIND APPLY" + offset + val1 + " " + val2 + " -> reg" + reg1);
         }
     },
     0x19: {
